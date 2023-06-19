@@ -1,0 +1,83 @@
+:root {
+  --col-light: #e6e6e6;
+  --col-dark: #313131;
+  --col-dark-soft: #525252;
+  --col-text-red: #c04000;
+  --col-graysh: rgba(36, 33, 36, 0.5);
+  --col-redish: rgba(124, 10, 2, 0.7);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap");
+
+$bp-huge: 125em;
+$bp-desktop: 75em;
+$bp-tablet: 50em;
+$bp-mobile: 31.25em;
+$bp-mini: 18.75em;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*::selection {
+  background: var(--col-dark-soft);
+  color: var(--col-light);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  padding: 3% 7%;
+  background: var(--col-dark);
+
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 800rem) 1fr;
+  grid-template-rows: 1fr minmax(60rem, 400rem) 1fr;
+
+  font-family: "Kanit", sans-serif;
+  font-size: clamp(1.4rem, 1vw, 6rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: #222;
+
+  position: relative;
+  z-index: 1;
+
+  @media only screen and (max-width: $bp-desktop) {
+    padding: 0;
+  }
+
+  & > * {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font: inherit;
+  }
+
+  button {
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}

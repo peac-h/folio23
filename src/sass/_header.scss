@@ -1,0 +1,72 @@
+.header {
+  height: 100%;
+  background: var(--col-light);
+  border-radius: 0.2rem;
+
+  position: relative;
+
+  &__page-name {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+
+    line-height: 1.2;
+    z-index: 11;
+
+    .georgian {
+      font-size: clamp(29px, 2vw, 13rem);
+      font-weight: 200;
+    }
+
+    .subheader {
+      display: block;
+      font-weight: 400;
+      font-size: clamp(14px, 1vw, 60px);
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    z-index: 98;
+    left: 3%;
+    top: 25%;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+
+      .nav-item {
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        min-height: 3vh;
+
+        .nav-element {
+          &.hide {
+            display: none;
+          }
+        }
+
+        .active-nav {
+          height: clamp(0.7rem, 0.5vw, 3rem);
+          width: clamp(0.7rem, 0.5vw, 3rem);
+          background: #000;
+          border-radius: 50%;
+
+          &.hide {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .section-number {
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    z-index: 11;
+  }
+}

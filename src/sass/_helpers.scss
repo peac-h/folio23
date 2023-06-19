@@ -1,0 +1,50 @@
+// MARGINS
+
+.mg-2 {
+  margin-bottom: 2vh !important;
+}
+.mg-5 {
+  margin-bottom: 5vh !important;
+}
+.mg-15 {
+  margin-bottom: 15vh !important;
+}
+.mg-20 {
+  margin-bottom: 20vh !important;
+}
+.mg-25 {
+  margin-bottom: 25vh !important;
+}
+.mg-30 {
+  margin-bottom: 30vh !important;
+}
+
+// HIDES
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease-out;
+}
+
+// FONTS
+
+.font-big {
+  font-size: clamp(6rem, 4vw, 13rem);
+  font-weight: 100;
+
+  @media only screen and (max-width: $bp-desktop) {
+    font-size: 4rem;
+  }
+}
+
+.text-end {
+  display: block;
+  text-align: end;
+}
+
+// COLORS
+
+.red {
+  color: var(--col-text-red);
+}

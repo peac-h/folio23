@@ -1,0 +1,66 @@
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--col-light);
+  z-index: 99;
+
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  font-size: clamp(2rem, 2vw, 15rem);
+  font-weight: 100;
+
+  transition: opacity 1s ease-out !important;
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 0.5%;
+    position: relative;
+
+    transition: opacity 0.5s ease-out !important;
+
+    &-text {
+      transition: opacity 0.5s ease-out !important;
+
+      span {
+        font-style: italic;
+      }
+    }
+
+    &-num {
+      font-weight: 200;
+    }
+
+    &::after {
+      content: "";
+      height: 20%;
+      width: 20%;
+      min-width: 20rem;
+
+      background-image: url(../imgs/sergey-vinogradov-zjPcJCJySMs-unsplash.jpg);
+      background-position: 50%;
+      background-size: cover;
+      border-radius: 0.2rem;
+
+      position: absolute;
+      right: 0;
+      top: 34%;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+
+  &__progress {
+    display: block;
+  }
+}

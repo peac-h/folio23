@@ -1,0 +1,74 @@
+.contact {
+  height: 100%;
+  display: flex;
+  padding-top: 15vh;
+
+  justify-content: flex-end;
+  z-index: 1;
+  overflow: hidden;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 70%;
+    width: 50%;
+    min-width: 70rem;
+    background: var(--col-redish);
+    border-radius: 0.2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .section-number {
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    z-index: 11;
+  }
+
+  &__content {
+    text-align: end;
+    padding: 3%;
+
+    &-socials {
+      display: flex;
+      flex-direction: column;
+
+      a:link,
+      a:visited {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    &-info {
+      margin-right: 50vw;
+      padding-top: 2vh;
+
+      @media only screen and (max-width: $bp-desktop) {
+        margin-right: 53vw;
+      }
+
+      @media only screen and (max-width: $bp-mobile) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__rights {
+    position: absolute;
+    right: 3%;
+    bottom: 1%;
+    padding-left: 3%;
+    text-align: end;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

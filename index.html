@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Peach Portfolio Webpage." />
+    <meta name="keywords" content="Front-End, Web Developer, Portfolio" />
+    <meta name="author" content="the Peach" />
+    <meta property="og:title" content="Peach Portfolio" />
+    <meta
+      property="og:description"
+      content="Checkout Front-End Web Developer Portfolio Webpage - Folio '23"
+    />
+    <meta property="og:url" content="https://peachportfolio.com" />
+    <!-- <meta property="og:image" content="path/to/og-image.jpg" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Peach Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <!-- <meta property="og:article:published_time" content="2023-05-27T10:00:00Z" /> -->
+
+    <!-- FAV -->
+    <!-- <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./source/fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./source/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./source/fav/favicon-16x16.png"
+    /> -->
+
+    <title>Peach Portfolio</title>
+  </head>
+  <body>
+    <div class="overlay" id="overlay">
+      <div class="overlay__content hide" id="overlayContent">
+        <div class="overlay__content-text hide" id="overlayContentText">
+          <!-- Peach <span> Folio </span> -->
+          Folio
+          <span class="overlay__content-num">'23</span>
+        </div>
+      </div>
+      <span class="overlay__progress" id="overlayProgress">0%</span>
+    </div>
+
+    <header class="header hide" id="header">
+      <h1 class="header__page-name">
+        <span class="georgian">ფოლიო</span>
+        <span class="font-big">'23</span>
+        <span class="subheader">Front-End Developer Portfolio</span>
+      </h1>
+
+      <nav class="header__nav">
+        <ul class="header__nav-container" id="navContainer">
+          <li class="nav-item" data-section="hero">
+            <div class="active-nav"></div>
+            <div class="nav-element hide">Home</div>
+          </li>
+          <li class="nav-item" data-section="projects">
+            <div class="active-nav hide"></div>
+            <div class="nav-element">Projects</div>
+          </li>
+          <li class="nav-item" data-section="info">
+            <div class="active-nav hide"></div>
+            <div class="nav-element">Info</div>
+          </li>
+          <li class="nav-item" data-section="contact">
+            <div class="active-nav hide"></div>
+            <div class="nav-element">Contact</div>
+          </li>
+        </ul>
+      </nav>
+
+      <span class="section-number" id="sectionNum">ა</span>
+    </header>
+
+    <section class="hero hide" id="hero">
+      <div class="hero__content">
+        <div class="hero__content-col hero__content-col--1">
+          <div>
+            <span class="animated">Hey there. I am a Front </span>
+          </div>
+          <div>
+            <span class="animated">-End Developer based in </span>
+          </div>
+          <div>
+            <span class="animated">Georgia. I take immense </span>
+          </div>
+          <div>
+            <span class="animated">pride in embracing my </span>
+          </div>
+          <div>
+            <span class="animated">identity as an artist </span>
+          </div>
+          <div>
+            <span class="animated">who has the ability to </span>
+          </div>
+          <div>
+            <span class="animated">infuse digital creations </span>
+          </div>
+          <div>
+            <span class="animated">with vibrant life. I am </span>
+          </div>
+          <div>
+            <span class="animated">fueled by the spirit of </span>
+          </div>
+          <div>
+            <span class="animated">freedom, trea. the beauty </span>
+          </div>
+        </div>
+
+        <div class="hero__content-col hero__content-col--2">
+          <div>
+            <span class="animated">of individuality and hold </span>
+          </div>
+          <div class="mg-2">
+            <span class="animated"> an empathy for humanity.</span>
+          </div>
+
+          <div>
+            <span class="red animated">In pursuit of</span>
+          </div>
+          <div>
+            <span class="red animated">extraordinary </span>
+          </div>
+          <div>
+            <span class="red animated">opportunities.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info hide" id="info">
+      <div class="info__col info__col--1">
+        <span class="info__col-heading">Tech I love:</span>
+
+        <div class="info__col-text">
+          <span>scss, vanilla JavaScript,</span>
+          <span>TypeScript, jQuery, React,</span>
+          <span>alongisde with tools like:</span>
+          <span>NPM, Parcel, Webpack, Babel,</span>
+          <span>Git, Github, Figma, Canva,</span>
+        </div>
+      </div>
+
+      <div class="info__col info__col--2">
+        <span class="info__col-heading">and with methodologies like: </span>
+        <div class="info__col-text mg-2">
+          <span>BEM Notation, RWD, Atomic </span>
+          <span>Design, Component-Based </span>
+          <span>Development, Performance</span>
+          <span>Optimization, OOP paradigm,</span>
+          <span>and MVC Architecture.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects hide" id="projects">
+      <div class="projects__content">
+        <div class="projects__col projects__col--1 mg-15" id="projectColOne">
+          <div class="projects__col-header mg-5">
+            / Learning Projects (Selected Ones)
+          </div>
+        </div>
+        <div class="projects__col projects__col--2 mg-15" id="projectColTwo">
+          <div class="projects__col-header mg-5">
+            / Personal Projects (Selected Ones)
+          </div>
+        </div>
+        <div class="projects__col projects__col--3 mg-15" id="projectColThree">
+          <div class="projects__col-header mg-5">
+            / Website Clones (Selected Ones)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact hide" id="contact">
+      <div class="contact__content">
+        <div class="contact__content-socials mg-5">
+          <div>
+            <a href="https://github.com/Peac-h" target="_blank">Github</a>
+          </div>
+          <div class="mg-15">
+            <a
+              href="https://www.linkedin.com/in/tamta-lomidze-b336b9266/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+          <div>
+            <a href="./src/res/RESUME.pdf" target="_blank">Resume</a>
+          </div>
+        </div>
+
+        <div class="contact__content-info">
+          <div>p6eac.h@gmail.com</div>
+          <div class="mg-2">Tbilisi, Georgia</div>
+          <div class="red">Front-End Web Developer</div>
+        </div>
+      </div>
+
+      <footer class="contact__rights">
+        <div>
+          Photo Credits to
+          <a href="https://unsplash.com/@vinogradovspb">Sergey Vinogradov.</a>
+        </div>
+        <div class="mg-5">
+          Photos sourced from <a href="https://unsplash.com/">Unsplash.</a>
+        </div>
+        <div>All rights reserved. Portfolio 2023.</div>
+      </footer>
+    </section>
+
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+.hero {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    height: 70%;
+    width: 50%;
+    min-width: 70rem;
+    border-radius: 0.2rem;
+    background-image: url(../imgs/sergey-vinogradov-M2Cxa3USgW8-unsplash.jpg);
+    background-position: 50%;
+    background-size: cover;
+    position: absolute;
+    left: 10%;
+    top: 0;
+
+    z-index: -1;
+    opacity: 0.7;
+
+    @media only screen and (max-width: $bp-desktop) {
+      left: 15%;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      left: 35%;
+    }
+  }
+
+  .section-number {
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    z-index: 11;
+  }
+
+  &__content {
+    display: flex;
+    gap: max(5rem, 4vw);
+    height: max-content;
+
+    position: absolute;
+    top: 50%;
+    left: 57%;
+
+    @media only screen and (max-width: $bp-desktop) {
+      left: auto;
+      right: 10%;
+      top: 60%;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      top: auto;
+      bottom: 3%;
+      left: 50%;
+      translate: -50%;
+      gap: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-mini) {
+      left: 47%;
+    }
+
+    &-col {
+      line-height: 1.7;
+
+      div {
+        overflow: hidden;
+      }
+
+      span {
+        white-space: nowrap;
+        display: block;
+        transform: translate(0, 100%);
+        transition: 0.4s ease-out;
+      }
+    }
+  }
+}
