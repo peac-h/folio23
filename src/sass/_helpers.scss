@@ -45,6 +45,12 @@
 
 // COLORS
 
-.red {
+.col-red {
   color: var(--col-text-red);
+}
+
+.col-light {
+  @media only screen and (max-width: $bp-desktop) {
+    color: var(--col-light) !important;
+  }
 }

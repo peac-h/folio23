@@ -9,6 +9,7 @@ class Controller {
   }
 
   public init(): void {
+    view.changeTitles();
     view.renderOverlay();
     this.model.loadData();
     view.renderData(this.model.getData());

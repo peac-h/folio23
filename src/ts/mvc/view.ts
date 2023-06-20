@@ -29,6 +29,16 @@ const animatedEls = document.querySelectorAll(
 ) as NodeListOf<HTMLElement>;
 
 class View {
+  public changeTitles(): void {
+    let titleList: string[] = ["Folio'23", "ფოლიო'23"];
+    let titleIndex = 0;
+
+    setInterval(() => {
+      document.title = titleList[titleIndex % titleList.length];
+      titleIndex++;
+    }, 3000);
+  }
+
   public async renderOverlay(): Promise<void> {
     await new Promise<void>((resolve) =>
       setTimeout(() => {
@@ -88,7 +98,8 @@ class View {
         let additionalClass: string = "";
         let span: string = "";
 
-        if (dataEl.status) span = `<span class="red">/ ${dataEl.status}</span>`;
+        if (dataEl.status)
+          span = `<span class="col-red">/ ${dataEl.status}</span>`;
 
         if (
           dataEl.title === "Peach Folio '90s" ||
@@ -97,13 +108,21 @@ class View {
           dataEl.title === "Weather App"
           // || dataEl.title === "Introducing ChatGPT"
         )
-          additionalClass = "red";
+          additionalClass = "col-red";
 
         const markup = `
             <div class="projects__col-item">
-                <a href="${dataEl.link}" target="_blank">${dataEl.year} / ${dataEl.tools} /
+            ${
+              dataEl.status
+                ? `
+            ${dataEl.year} / ${dataEl.tools} /
+            <span class="font-big ${additionalClass}">${dataEl.title}</span>${span}
+            `
+                : `
+            <a href="${dataEl.link}" target="_blank">${dataEl.year} / ${dataEl.tools} /
                 <span class="font-big ${additionalClass}">${dataEl.title}</span></a>
-                ${span}
+            `
+            }
             </div>
         `;
 
