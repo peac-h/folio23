@@ -62,5 +62,7 @@
 
   &__progress {
     display: block;
+
+    transition: opacity 0.4s ease-out;
   }
 }

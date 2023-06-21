@@ -42,6 +42,8 @@
 
     <title>Folio'23</title>
 
+    <script defer src="dist/bundle.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -60,20 +62,19 @@
 
   <body>
     <div class="overlay" id="overlay">
-      <div class="overlay__content hide" id="overlayContent">
-        <div class="overlay__content-text hide" id="overlayContentText">
-          <!-- Peach <span> Folio </span> -->
+      <div class="overlay__content hidden" id="overlayContent">
+        <div class="overlay__content-text hidden" id="overlayContentText">
           Folio
           <span class="overlay__content-num">'23</span>
         </div>
       </div>
-      <span class="overlay__progress" id="overlayProgress">0%</span>
+      <span class="overlay__progress hidden" id="overlayProgress">0%</span>
     </div>
 
     <header class="header hide" id="header">
       <h1 class="header__page-name">
         <span class="georgian">ფოლიო</span>
-        <span class="font-big">'23</span>
+        <span class="number">'23</span>
         <span class="subheader">Front-End Developer Portfolio</span>
       </h1>
 
@@ -238,7 +239,5 @@
         <div>All rights reserved. Portfolio 2023.</div>
       </footer>
     </section>
-
-    <script src="dist/bundle.js"></script>
   </body>
 </html>

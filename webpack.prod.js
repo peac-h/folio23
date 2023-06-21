@@ -1,7 +1,11 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 module.exports = {
   mode: "production",
-  entry: "./src/ts/index.ts",
+  entry: ["./src/ts/index.ts", "./src/sass/main.scss"],
   devtool: "inline-source-map",
   module: {
     rules: [
@@ -12,7 +16,8 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        include: /src/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
     ],
   },
@@ -25,4 +30,18 @@ module.exports = {
     publicPath: "/dist",
     clean: true,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "index.html",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "styles.css",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "src/fav", to: "" },
+        { from: "src/res", to: "" },
+      ],
+    }),
+  ],
 };

@@ -42,6 +42,13 @@ class View {
   public async renderOverlay(): Promise<void> {
     await new Promise<void>((resolve) =>
       setTimeout(() => {
+        overlayProgressEl?.classList.remove("hidden");
+        resolve();
+      }, 700)
+    );
+
+    await new Promise<void>((resolve) =>
+      setTimeout(() => {
         let progress = 1;
 
         const incrementProgress = () => {
@@ -52,19 +59,19 @@ class View {
 
         const interval = setInterval(incrementProgress, 70);
         resolve();
-      }, 1000)
+      }, 1500)
     );
 
     await new Promise<void>((resolve) =>
       setTimeout(() => {
-        overlayContentEl?.classList.remove("hide");
+        overlayContentEl?.classList.remove("hidden");
         resolve();
-      }, 1000)
+      }, 1500)
     );
 
     await new Promise<void>((resolve) =>
       setTimeout(() => {
-        overlayContentTextEl?.classList.remove("hide");
+        overlayContentTextEl?.classList.remove("hidden");
         resolve();
       }, 2000)
     );
