@@ -4,7 +4,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Omnifood",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/0_learning_projects/main/omnifood.png",
     link: "https://omnifood-by-peach.netlify.app/",
     year: "2022",
     type: "learning project",
@@ -12,7 +11,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Natours",
     tools: "SCSS",
-    // img: "https://raw.githubusercontent.com/Peac-h/0_learning_projects/main/natours.png",
     link: "https://natours-by-peach.netlify.app/",
     year: "2022",
     type: "learning project",
@@ -20,7 +18,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Trillo",
     tools: "SCSS",
-    // img: "https://raw.githubusercontent.com/Peac-h/0_learning_projects/main/trillo.png",
     link: "https://trillo-by-peach.netlify.app/",
     year: "2022",
     type: "learning project",
@@ -28,7 +25,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Nexter",
     tools: "SCSS",
-    // img: "https://raw.githubusercontent.com/Peac-h/0_learning_projects/main/nexter.png",
     link: "https://nexter-by-peach.netlify.app/",
     year: "2022",
     type: "learning project",
@@ -36,7 +32,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Guess My Number",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/0_learning_projects/main/guess_my_num.png",
     link: "https://guessmynum-by-peach.netlify.app/",
     year: "2022",
     type: "learning project",
@@ -44,7 +39,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Bankist App",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/0_learning_projects/main/bankist_app.png",
     link: "https://bankistapp-by-peach.netlify.app/",
     year: "2022",
     type: "learning project",
@@ -52,7 +46,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Pig Game",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/0_learning_projects/main/pig_game.png",
     link: "https://piggame-by-peach.netlify.app/",
     year: "2022",
     type: "learning project",
@@ -60,7 +53,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Bankist Page",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/0_learning_projects/main/bankist_page.png",
     link: "https://bankist-by-peach.netlify.app/",
     year: "2022",
     type: "learning project",
@@ -68,7 +60,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Forkify App",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/0_learning_projects/main/forkify.png",
     link: "https://forkify-by-peach.netlify.app/",
     year: "2023",
     type: "learning project",
@@ -76,7 +67,6 @@ const projectsData: DataPattern[] = [
   {
     title: "E-Learning Landing Page",
     tools: "SCSS",
-    // img: "https://raw.githubusercontent.com/Peac-h/6_Skilled-e-Learning-Landing-Page/main/Screenshot.png",
     link: "https://peac-h.github.io/6_Skilled-e-Learning-Landing-Page/",
     year: "2022",
     type: "website clone",
@@ -84,7 +74,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Art Gallery Website",
     tools: "SCSS",
-    // img: "https://raw.githubusercontent.com/Peac-h/7_Art-Gallery-Website/main/Screenshot.png",
     link: "https://peac-h.github.io/7_Art-Gallery-Website/",
     year: "2022",
     type: "website clone",
@@ -92,7 +81,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Equalizer Landing Page",
     tools: "SCSS",
-    // img: "https://raw.githubusercontent.com/Peac-h/8_Equalizer-Landing-Page/main/Screenshot.png",
     link: "https://peac-h.github.io/8_Equalizer-Landing-Page/",
     year: "2022",
     type: "website clone",
@@ -100,7 +88,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Typemaster Landing Page",
     tools: "SCSS",
-    // img: "https://raw.githubusercontent.com/Peac-h/9_Typemaster-Landing-Page/main/Screenshot.png",
     link: "https://peac-h.github.io/9_Typemaster-Landing-Page/",
     year: "2022",
     type: "website clone",
@@ -108,7 +95,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Single Page Portfolio",
     tools: "SCSS",
-    // img: "https://raw.githubusercontent.com/Peac-h/10.0_simple_portfolio_page/main/Desktop.png",
     link: "https://peac-h.github.io/10.0_simple_portfolio_page/",
     year: "2023",
     type: "website clone",
@@ -116,7 +102,6 @@ const projectsData: DataPattern[] = [
   {
     title: "CSS Hovers",
     tools: "SCSS",
-    // img: "https://raw.githubusercontent.com/Peac-h/14_css-hovers/main/Screen%20Shot%20'2023'-03-01%20at%2010.12.45%20PM.png",
     link: "https://peac-h.github.io/14_css-hovers/",
     year: "2023",
     type: "personal project",
@@ -124,7 +109,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Apple Calculator",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/20_javascript_calculator/main/screenshot.png",
     link: "https://peac-h.github.io/20_javascript_calculator/",
     year: "2023",
     type: "personal project",
@@ -132,7 +116,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Guess The Spell",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/21_guess_the_spell/main/Screen%20Shot%20'2023'-03-27%20at%2010.35.12%20PM.png",
     link: "https://peac-h.github.io/21_guess_the_spell/",
     year: "2023",
     type: "personal project",
@@ -140,7 +123,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Speed Typing Game",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/22_speed_typing_game/main/Screenshot2.png",
     link: "https://peac-h.github.io/22_speed_typing_game/",
     year: "2023",
     type: "personal project",
@@ -148,7 +130,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Weather App",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/23_weather_app/main/screenDesktop.png",
     link: "https://p-weather-app.netlify.app/",
     year: "2023",
     type: "personal project",
@@ -156,7 +137,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Search The World",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/24_search_the_world/main/Screen%20Shot%20'2023'-04-08%20at%207.51.10%20PM.png",
     link: "https://peac-h.github.io/24_search_the_world/",
     year: "2023",
     type: "personal project",
@@ -164,7 +144,6 @@ const projectsData: DataPattern[] = [
   {
     title: "ToDo App",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/25_todo_app/main/Screenshot.png",
     link: "https://peac-h.github.io/25_todo_app/",
     year: "2023",
     type: "personal project",
@@ -172,7 +151,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Music App",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/26_music-player/main/Screen%20Shot%20'2023'-04-21%20at%209.17.58%20PM.png",
     link: "https://peac-h.github.io/26_music-player/",
     year: "2023",
     type: "personal project",
@@ -180,7 +158,6 @@ const projectsData: DataPattern[] = [
   {
     title: "A Traveller's Notebook",
     tools: "Vanilla JS",
-    // img: "https://raw.githubusercontent.com/Peac-h/27_leaflet_project/main/Screen%20Shot%20'2023'-05-07%20at%2012.08.40%20PM.png",
     link: "https://peac-h.github.io/27_leaflet_project/",
     year: "2023",
     type: "personal project",
@@ -188,7 +165,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Tic Tac Toe",
     tools: "jQuery",
-    // img: "https://raw.githubusercontent.com/Peac-h/28_tic-tac-toe/main/Screen%20Shot%20'2023'-05-07%20at%201.17.21%20PM.png",
     link: "https://peac-h.github.io/28_tic-tac-toe/",
     year: "2023",
     type: "personal project",
@@ -203,7 +179,6 @@ const projectsData: DataPattern[] = [
   {
     title: "Peach Folio '90s",
     tools: "Vanilla JS",
-    // img: ,
     link: "https://peachfolio90s.com/",
     year: "2023",
     type: "personal project",
