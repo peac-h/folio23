@@ -86,7 +86,6 @@ class View {
     await new Promise<void>((resolve) =>
       setTimeout(() => {
         headerEl?.classList.remove("hide");
-        heroEl?.classList.remove("hide");
         resolve();
       }, 200)
     );
@@ -112,8 +111,8 @@ class View {
           dataEl.title === "Peach Folio '90s" ||
           dataEl.title === "A Traveller's Notebook" ||
           dataEl.title === "Nexter" ||
-          dataEl.title === "Weather App"
-          // || dataEl.title === "Introducing ChatGPT"
+          dataEl.title === "Weather App" ||
+          dataEl.title === "Introducing ChatGPT"
         )
           additionalClass = "col-red";
 
@@ -154,9 +153,9 @@ class View {
       { name: "contact", num: "დ" },
     ];
 
-    document.getElementById(id)?.classList.remove("hide");
+    window.location.hash = id;
 
-    const section = sections.find((el) => el.name === id);
+    let section = sections.find((el) => el.name === id);
 
     if (section) sectionNumEl.innerText = section.num;
 
@@ -166,6 +165,16 @@ class View {
       if (id !== section.name)
         document.getElementById(section.name)?.classList.add("hide");
     });
+
+    document
+      .querySelector(`[data-section="${id}"]`)
+      ?.querySelector(".active-nav")
+      ?.classList.remove("hide");
+
+    document
+      .querySelector(`[data-section="${id}"]`)
+      ?.querySelector(".nav-element")
+      ?.classList.add("hide");
   }
 
   public handleNavClicks(): void {
@@ -202,6 +211,16 @@ class View {
 
       if (id) this.revealSection(id);
     });
+  }
+
+  public initializePage(): void {
+    const initialHash = window.location.hash.substring(1);
+    const sections = ["hero", "projects", "info", "contact"];
+    const defaultSection = sections.includes(initialHash)
+      ? initialHash
+      : "hero";
+
+    this.revealSection(defaultSection);
   }
 }
 
