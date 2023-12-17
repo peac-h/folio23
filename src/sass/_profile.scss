@@ -41,18 +41,12 @@
     z-index: 11;
   }
 
-  &__col {
+  &__cols {
+    width: max-content;
     margin-right: 10%;
+  }
 
-    &-heading {
-      white-space: nowrap;
-    }
-
-    &-text {
-      span {
-        display: block;
-        white-space: nowrap;
-      }
-    }
+  &-heading {
+    white-space: nowrap;
   }
 }
