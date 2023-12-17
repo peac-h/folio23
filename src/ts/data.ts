@@ -172,8 +172,15 @@ const projectsData: DataPattern[] = [
   {
     title: "Introducing ChatGPT",
     tools: "TS",
-    status: "Working on currently",
+    link: "https://introducing-chatgpt-clone.netlify.app/",
     year: "2023",
+    type: "website clone",
+  },
+  {
+    title: "Spotify Landing Page",
+    tools: "React",
+    status: "Working on currently",
+    year: "2024",
     type: "website clone",
   },
   {
