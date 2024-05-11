@@ -16,6 +16,7 @@
     min-width: 70rem;
     background: var(--col-redish);
     border-radius: 0.2rem;
+    border-top-right-radius: 32px;
     position: absolute;
     right: 0;
     top: 0;
@@ -36,12 +37,6 @@
     &-socials {
       display: flex;
       flex-direction: column;
-
-      a:link,
-      a:visited {
-        color: inherit;
-        text-decoration: none;
-      }
     }
 
     &-info {
@@ -64,11 +59,5 @@
     bottom: 1%;
     padding-left: 3%;
     text-align: end;
-
-    a:link,
-    a:visited {
-      text-decoration: none;
-      color: inherit;
-    }
   }
 }

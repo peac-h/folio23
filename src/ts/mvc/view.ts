@@ -13,6 +13,7 @@ const projectColThreeEl = document.getElementById(
   "projectColThree"
 ) as HTMLDivElement;
 const overlayEl = document.getElementById("overlay") as HTMLDivElement;
+const bodyEl = document.getElementById("body") as HTMLBodyElement;
 const overlayContentEl = document.getElementById(
   "overlayContent"
 ) as HTMLDivElement;
@@ -92,6 +93,7 @@ class View {
 
     await new Promise<void>((resolve) =>
       setTimeout(() => {
+        bodyEl.classList.add("filter");
         animatedEls.forEach((el) => (el.style.transform = "translate(0, 0)"));
         resolve();
       }, 500)
@@ -109,8 +111,7 @@ class View {
 
         if (
           dataEl.title === "Peach Folio '90s" ||
-          dataEl.title === "A Traveller's Notebook" ||
-          dataEl.title === "Nexter" ||
+          dataEl.title === "Music App" ||
           dataEl.title === "Weather App" ||
           dataEl.title === "Introducing ChatGPT"
         )

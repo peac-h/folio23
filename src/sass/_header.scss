@@ -1,9 +1,13 @@
 .header {
   height: 100%;
   background: var(--col-light);
-  border-radius: 0.2rem;
-
+  // border-radius: 0.2rem;
+  border-radius: 4px 32px 4px 32px;
   position: relative;
+
+  @media only screen and (max-width: $bp-tablet) {
+    border-radius: 0;
+  }
 
   &__page-name {
     position: absolute;
@@ -15,19 +19,19 @@
     text-align: center;
 
     .georgian {
-      font-size: clamp(3rem, 2.2vw, 13rem);
+      font-size: clamp(3rem, 2.2vw, 10rem);
       font-weight: 300;
     }
 
     .number {
-      font-size: clamp(4rem, 3vw, 13rem);
+      font-size: clamp(4rem, 3vw, 10rem);
       font-weight: 100;
     }
 
     .subheader {
       display: block;
       font-weight: 300;
-      font-size: clamp(14px, 1vw, 60px);
+      font-size: clamp(14px, 1vw, 50px);
     }
   }
 

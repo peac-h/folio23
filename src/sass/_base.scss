@@ -11,7 +11,7 @@
 
 $bp-huge: 125em;
 $bp-desktop: 75em;
-$bp-tablet: 50em;
+$bp-tablet: 55.25em;
 $bp-mobile: 31.25em;
 $bp-mini: 18.75em;
 
@@ -36,7 +36,8 @@ html {
 body {
   height: 100vh;
   overflow: hidden;
-  padding: 3% 7%;
+  // padding: 3% 7%;
+  padding: clamp(20px, 1.5%, 10rem);
   background: var(--col-dark);
 
   display: grid;
@@ -44,7 +45,7 @@ body {
   grid-template-rows: 1fr minmax(60rem, 400rem) 1fr;
 
   font-family: "Kanit", sans-serif;
-  font-size: clamp(1.4rem, 1vw, 6rem);
+  font-size: clamp(1.4rem, 1vw, 4rem);
   font-weight: 600;
   line-height: 1.4;
   color: #222;
@@ -52,7 +53,7 @@ body {
   position: relative;
   z-index: 1;
 
-  @media only screen and (max-width: $bp-desktop) {
+  @media only screen and (max-width: $bp-tablet) {
     padding: 0;
   }
 
@@ -79,5 +80,15 @@ body {
     font: inherit;
     cursor: pointer;
     text-transform: uppercase;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &.filter {
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
   }
 }
