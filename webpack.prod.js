@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "production",
-  entry: ["./src/ts/index.ts", "./src/sass/main.scss"],
+  entry: "./src/ts/index.ts",
   devtool: "inline-source-map",
   module: {
     rules: [
@@ -25,23 +25,17 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"],
   },
   output: {
-    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/dist",
+    filename: "bundle.js",
+    publicPath: "/",
     clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "./dist/index.html",
     }),
     new MiniCssExtractPlugin({
       filename: "styles.css",
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: "src/fav", to: "" },
-        { from: "src/res", to: "" },
-      ],
     }),
   ],
 };
