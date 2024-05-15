@@ -4,15 +4,15 @@ A portfolio project with a touch of Georgian- inspired design, developed using S
 
 ## Checkout The Live Demo
 
-[peachportfolio.com](https://peachportfolio.com/)
+[peachfolio.online](https://peachfolio.online/)
 
 ## The Design
 
-![Folio'23 - Desktop](https://raw.githubusercontent.com/Peac-h/folio23/main/Screen%20Shot%202023-06-21%20at%2010.54.01%20PM.png?token=GHSAT0AAAAAAB7JNC7KZKT5YOWW2RKNFYJ6ZETJD4Q)
-![Folio'23 - Desktop](https://raw.githubusercontent.com/Peac-h/folio23/main/Screen%20Shot%202023-06-21%20at%2010.54.13%20PM.png?token=GHSAT0AAAAAAB7JNC7KCDNRMNRDKJMOD3ICZETJD6Q)
-![Folio'23 - Desktop](https://raw.githubusercontent.com/Peac-h/folio23/main/Screenshot%202023-12-17%20at%207.49.18%20AM.png)
-![Folio'23 - Desktop](https://raw.githubusercontent.com/Peac-h/folio23/main/Screen%20Shot%202023-06-21%20at%2010.54.26%20PM.png?token=GHSAT0AAAAAAB7JNC7K54Z54HSKO4EPX5AOZETJEAQ)
-![Folio'23 - Desktop](https://raw.githubusercontent.com/Peac-h/folio23/main/Screen%20Shot%202023-06-21%20at%2010.53.53%20PM.png?token=GHSAT0AAAAAAB7JNC7KW2YDB2H7GJGI5FK6ZETJD2Q)
+![Folio'23 - Desktop](https://raw.githubusercontent.com/Peac-h/folio23/main/Screen%20Shot%202023-06-21%20at%2010.53.53%20PM.png)
+![Folio'23 - Desktop](https://raw.githubusercontent.com/Peac-h/folio23/main/Screenshot%202024-05-15%20at%201.17.10%E2%80%AFPM.png)
+![Folio'23 - Desktop](https://raw.githubusercontent.com/Peac-h/folio23/main/Screenshot%202024-05-15%20at%201.17.21%E2%80%AFPM.png)
+![Folio'23 - Desktop](https://raw.githubusercontent.com/Peac-h/folio23/main/Screenshot%202024-05-15%20at%201.17.30%E2%80%AFPM.png)
+![Folio'23 - Desktop](https://raw.githubusercontent.com/Peac-h/folio23/main/Screenshot%202024-05-15%20at%201.17.38%E2%80%AFPM.png)
 
 ## Technologies Used
 
@@ -22,4 +22,4 @@ A portfolio project with a touch of Georgian- inspired design, developed using S
 ## Author
 
 - [LinkedIn](https://www.linkedin.com/in/tamta-lomidze-b336b9266/)
-- [Portfolio](https://peachportfolio.com/)
+- [Portfolio](https://peachfolio.online/)

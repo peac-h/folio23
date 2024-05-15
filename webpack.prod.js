@@ -32,10 +32,16 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./dist/index.html",
+      template: "index.html",
     }),
     new MiniCssExtractPlugin({
       filename: "styles.css",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "./src/fav", to: "src/fav" },
+        { from: "./src/res", to: "src/res" },
+      ],
     }),
   ],
 };
