@@ -110,10 +110,9 @@ class View {
           span = `<span class="col-red">/ ${dataEl.status}</span>`;
 
         if (
-          dataEl.title === "Peach Folio '90s" ||
-          dataEl.title === "Music App" ||
-          dataEl.title === "Weather App" ||
-          dataEl.title === "Introducing ChatGPT"
+          dataEl.title === "Echo Play" ||
+          dataEl.title === "Horizon Weather" ||
+          dataEl.title === "Netflix Entry Page"
         )
           additionalClass = "col-red";
 
@@ -121,8 +120,12 @@ class View {
             <div class="projects__col-item">
             ${
               dataEl.status
-                ? `
-            ${dataEl.year} / ${dataEl.tools} /
+                ? dataEl.tools
+                  ? `
+                ${dataEl.year} / ${dataEl.tools} /
+                <span class="font-big ${additionalClass}">${dataEl.title}</span>${span}
+                `
+                  : `
             <span class="font-big ${additionalClass}">${dataEl.title}</span>${span}
             `
                 : `
@@ -132,9 +135,6 @@ class View {
             }
             </div>
         `;
-
-        if (dataEl.type === "learning project")
-          projectColOneEl.innerHTML += markup;
 
         if (dataEl.type === "personal project")
           projectColTwoEl.innerHTML += markup;
