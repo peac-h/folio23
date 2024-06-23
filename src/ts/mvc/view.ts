@@ -110,7 +110,6 @@ class View {
           span = `<span class="col-red">/ ${dataEl.status}</span>`;
 
         if (
-          dataEl.title === "Echo Play" ||
           dataEl.title === "Horizon Weather" ||
           dataEl.title === "Netflix Entry Page"
         )
