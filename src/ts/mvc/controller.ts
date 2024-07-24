@@ -11,7 +11,6 @@ class Controller {
   public init(): void {
     view.changeTitles();
     view.renderOverlay();
-    view.initializePage();
     this.model.loadData();
     view.renderData(this.model.getData());
     view.handleNavClicks();

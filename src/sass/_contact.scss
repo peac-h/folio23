@@ -6,8 +6,9 @@
   justify-content: flex-end;
   z-index: 1;
   overflow: hidden;
-
   position: relative;
+
+  transition: all 0.4s ease-out;
 
   &::after {
     content: "";
@@ -25,13 +26,6 @@
     @media only screen and (max-width: $bp-tablet) {
       border-top-right-radius: 0;
     }
-  }
-
-  .section-number {
-    position: absolute;
-    right: 3%;
-    top: 5%;
-    z-index: 11;
   }
 
   &__content {

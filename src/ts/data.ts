@@ -51,9 +51,9 @@ const projectsData: DataPattern[] = [
     type: "website clone",
   },
   {
-    title: "Shopify Marketing Page",
+    title: "Google I/O 2022",
     tools: "TS / React / Tailwind",
-    link: "https://shopify-clone-by-peach.netlify.app/",
+    link: "https://g-io-clone.netlify.app/",
     year: "2024",
     type: "website clone",
   },

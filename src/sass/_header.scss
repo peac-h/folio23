@@ -4,6 +4,7 @@
   // border-radius: 0.2rem;
   border-radius: 4px 32px 4px 32px;
   position: relative;
+  transition: all 0.4s ease-out;
 
   @media only screen and (max-width: $bp-tablet) {
     border-radius: 0;
@@ -71,12 +72,5 @@
         }
       }
     }
-  }
-
-  .section-number {
-    position: absolute;
-    right: 3%;
-    top: 5%;
-    z-index: 11;
   }
 }

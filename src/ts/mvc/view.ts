@@ -24,7 +24,6 @@ const overlayProgressEl = document.getElementById(
   "overlayProgress"
 ) as HTMLSpanElement;
 const headerEl = document.getElementById("header") as HTMLHeadElement;
-const heroEl = document.getElementById("hero") as HTMLElement;
 const animatedEls = document.querySelectorAll(
   ".animated"
 ) as NodeListOf<HTMLElement>;
@@ -84,12 +83,8 @@ class View {
       }, 5000)
     );
 
-    await new Promise<void>((resolve) =>
-      setTimeout(() => {
-        headerEl?.classList.remove("hide");
-        resolve();
-      }, 200)
-    );
+    headerEl?.classList.remove("hide");
+    this.initializePage();
 
     await new Promise<void>((resolve) =>
       setTimeout(() => {

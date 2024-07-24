@@ -21,6 +21,11 @@ $bp-mini: 18.75em;
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+  display: none;
 }
 
 *::selection {
@@ -34,9 +39,8 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 100svh;
   overflow: hidden;
-  // padding: 3% 7%;
   padding: clamp(20px, 1.5%, 10rem);
   background: var(--col-dark);
 

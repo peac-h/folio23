@@ -5,6 +5,7 @@
   justify-content: flex-end;
   position: relative;
   z-index: 1;
+  transition: all 0.4s ease-out;
 
   &::before {
     content: "";
@@ -29,13 +30,6 @@
     @media only screen and (max-width: $bp-mobile) {
       left: 35%;
     }
-  }
-
-  .section-number {
-    position: absolute;
-    right: 3%;
-    top: 5%;
-    z-index: 11;
   }
 
   &__content {

@@ -1,30 +1,22 @@
 // MARGINS
 
 .mg-2 {
-  margin-bottom: 2vh !important;
+  margin-bottom: 2rem !important;
 }
 .mg-5 {
-  margin-bottom: 5vh !important;
+  margin-bottom: 5rem !important;
 }
-.mg-15 {
-  margin-bottom: 15vh !important;
-}
-.mg-20 {
-  margin-bottom: 20vh !important;
-}
-.mg-25 {
-  margin-bottom: 25vh !important;
-}
-.mg-30 {
-  margin-bottom: 30vh !important;
+.mg-10 {
+  margin-bottom: 10rem !important;
 }
 
 // HIDES
 
 .hide {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .hidden {
@@ -58,4 +50,13 @@
   @media only screen and (max-width: $bp-desktop) {
     color: var(--col-light) !important;
   }
+}
+
+// POSITIONS
+
+.top-right {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  z-index: 11;
 }
