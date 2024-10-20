@@ -16,7 +16,14 @@ const projectsData: DataPattern[] = [
     type: "personal project",
   },
   {
-    title: "Horizon Weather",
+    title: "Game Time",
+    tools: "Vanilla JS",
+    link: "https://peac-h.github.io/28_tic-tac-toe/",
+    year: "2023",
+    type: "personal project",
+  },
+  {
+    title: "P Wetter",
     tools: "Vanilla JS / Web API",
     link: "https://p-weather-app.netlify.app/",
     year: "2023",
@@ -34,13 +41,6 @@ const projectsData: DataPattern[] = [
     tools: "TS",
     link: "https://introducing-chatgpt-clone.netlify.app/",
     year: "2023",
-    type: "website clone",
-  },
-  {
-    title: "Netflix Entry Page",
-    tools: "TS / React",
-    link: "https://nf-by-peach.netlify.app/",
-    year: "2024",
     type: "website clone",
   },
   {

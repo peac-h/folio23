@@ -1,7 +1,7 @@
 // MARGINS
 
 .mg-2 {
-  margin-bottom: 2rem !important;
+  margin-bottom: clamp(2rem, 2vh, 7rem) !important;
 }
 .mg-5 {
   margin-bottom: 5rem !important;
@@ -31,7 +31,7 @@
   font-weight: 100;
 
   @media only screen and (max-width: $bp-desktop) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 

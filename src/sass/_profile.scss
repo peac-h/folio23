@@ -45,6 +45,7 @@
   }
 
   &__col {
-    max-width: 15rem;
+    max-width: clamp(13rem, 11vw, 42rem);
+    width: 100%;
   }
 }

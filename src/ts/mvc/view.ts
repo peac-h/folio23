@@ -104,10 +104,7 @@ class View {
         if (dataEl.status)
           span = `<span class="col-red">/ ${dataEl.status}</span>`;
 
-        if (
-          dataEl.title === "Horizon Weather" ||
-          dataEl.title === "Netflix Entry Page"
-        )
+        if (dataEl.title === "Google I/O 2022" || dataEl.title === "CSS Hovers")
           additionalClass = "col-red";
 
         const markup = `
